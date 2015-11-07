@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css" media="screen">
+	body{
+		background-color: #eee;
+	}
+	.wrap{
+		margin: 10px;
+		border: solid #999 2px;
+		width: 500px;
+		padding: 30px 20px;
+	}
+	.menu{
+		margin: 20px;
+
+	}
+	.menu h2{
+		position: relative;
+		height: 40px;
+		width: 400px;
+		border-radius: 10px;
+		overflow: hidden;
+		margin: 0;
+	}
+	.menu h2 a{
+		display: block;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		line-height: 40px;
+		font-size: 32px;
+		background-color: #6bb2ff;
+		background-image: linear-gradient(to top,#6bb2ff,#2288dd);
+		padding-left: 10px;
+		color: #666;
+	}
+	.menu h2:before{
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		content:" ";
+		height:0px;
+		width:0px;
+		border:solid 10px #fff;
+		border-color: transparent transparent transparent #fff;
+	}
+	.menu p{
+		height: 0;
+		width: 400px;
+		margin: 0;
+		font:20px/26px "微软雅黑" ;
+		text-indent: 2em;
+		overflow: hidden;
+		transition: height 0.5s ease-in;
+	}
+	.wrap :target h2 a{
+		color: #fff;
+		background-color: #5cc1ee;
+		background-image: linear-gradient(to top,#5cc1ee,#1177cc);
+
+	}
+	.wrap :target p{
+		height: 200px;
+	}
+	.wrap :target h2:before{
+		border-color:#fff transparent transparent ;
+		top: 15px;
+	}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="menu" id="menu1">
+	    	<h2><a href="#menu1" title="">first</a></h2>
+	    	<p>this is the first time I'm here .........................</p>
+	    </div>
+	    <div class="menu" id="menu2">
+	    	<h2><a href="#menu2" title="">second</a></h2>
+	    	<p>this is the first time I'm here .........................</p>
+	    </div>
+	    <div class="menu" id="menu3">
+	    	<h2><a href="#menu3" title="">third</a></h2>
+	    	<p>this is the first time I'm here .........................</p>
+	    </div>
+	</div>
+	    
+</body>
+</html>
